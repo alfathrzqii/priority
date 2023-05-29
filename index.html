@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Priority</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="PRIORITY">
+  <meta property="og:description" content="Priority official website">
+  <meta property="og:image" content="image/banner.jpg">
+
+  <!-- link cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <a href="/" class="flex-shrink-0 flex items-center">
+              <img class="h-8 w-8" src="image/logo.png" alt="Logo">
+              <div class="ml-2 text-white font-semibold text-lg">PRIORITY</div>
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="#beranda" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+              <a href="#galeri" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Galeri</a>
+              <a href="#artikel" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Artikel</a>
+            </div>
+          </div>
+        </div>
+        <div class="block md:hidden">
+          <button id="mobile-menu-button" class="p-2 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+            <span class="sr-only">Toggle menu</span>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hidden mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#beranda" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
+        <a href="#galeri" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Galeri</a>
+        <a href="#artikel" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Artikel</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bagian beranda -->
+  <section class="bg-gray-100 py-16" id="beranda">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Welcome to <span id="typed-text"></span></h2>
+        <p class="text-lg text-gray-600">Wesbite resmi Priority, kelas mipa satu angkatan 34 SMA MTA Surakarta.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian galeri -->
+  <section id="galeri" class="bg-gray-100 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Galeri Kelas</h2>
+        <p class="text-lg text-gray-600">Lihat foto-foto seru dari kelas kami.</p>
+      </div>
+  
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="image/image1.jpg" alt="Image 1" class="w-full h-48 object-cover">
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="image/image2.jpg" alt="Image 2" class="w-full h-48 object-cover">
+        </div>
+        <!-- <div class="bg-white rounded-lg shadow-md overflow-hidden"> -->
+          <!-- <img src="logo.jpg" alt="Image 3" class="w-full h-48 object-cover"> -->
+        <!-- </div> -->
+        <!-- Tambahkan lebih banyak item galeri di sini -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian artikel -->
+  <section id="artikel" class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Artikel</h2>
+        <p class="text-lg text-gray-600">Baca artikel menarik tentang kelas kami.</p>
+      </div>
+  
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="image/image1.jpg" alt="Article 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">Judul Artikel 1</h3>
+            <p class="text-sm text-gray-500">Ringkasan artikel 1</p>
+            <a href="#" class="text-blue-500 hover:underline">Baca Selengkapnya</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="image/image2.jpg" alt="Article 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">Judul Artikel 2</h3>
+            <p class="text-sm text-gray-500">Ringkasan artikel 2</p>
+            <a href="#" class="text-blue-500 hover:underline">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Footer -->
+  <!-- <footer class="bg-gray-800 py-8"> -->
+    <!-- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> -->
+      <!-- <div class="flex justify-center"> -->
+        <!-- <ul class="flex space-x-4"> -->
+          <!-- <li><a href="#beranda" class="text-gray-400 hover:text-white">Beranda</a></li> -->
+          <!-- <li><a href="#galeri" class="text-gray-400 hover:text-white">Galeri</a></li> -->
+          <!-- <li><a href="#artikel" class="text-gray-400 hover:text-white">Artikel</a></li> -->
+        <!-- </ul> -->
+        <!-- <a href="https://instagram.com/scienseoneispriority" class="text-gray-400 hover:text-white">Follow our instagram</a> -->
+      <!-- </div> -->
+      <!-- <div class="text-center mt-4"> -->
+        <!-- <p class="text-sm text-gray-400">&copy; 2023 Priority. All rights reserved.</p> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </footer> -->
+
+  <footer class="bg-gray-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center">
+        <ul class="flex flex-col space-y-4 text-center">
+          <li><a href="#beranda" class="text-gray-400 hover:text-white">Beranda</a></li>
+          <li><a href="#galeri" class="text-gray-400 hover:text-white">Galeri</a></li>
+          <li><a href="#artikel" class="text-gray-400 hover:text-white">Artikel</a></li>
+          <li><a href="https://instagram.com/scienceoneispriority" class="text-gray-400 hover:text-white">Follow our instagram</a></li>
+        </ul>
+      </div>
+      <div class="text-center mt-4">
+        <p class="text-sm text-gray-400">&copy; 2023 Priority. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  
+  <!-- Bagian script disini wkwk :) -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed-text', {
+      strings: ["MIPA SATU", "PRIORITY"],
+      typeSpeed: 70,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+  
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      document.getElementsByClassName('mobile-menu')[0].classList.toggle('hidden');
+    });
+  </script>
+  
+
+  <script src="https://cdn.tailwindcss.com/2.2.16/tailwind.min.js"></script>
+</body>
+
+</html>
